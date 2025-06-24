@@ -1,0 +1,41 @@
+# תיקייה עם ספריות צד שלישי (npm)
+node_modules/
+
+# קבצי לוג
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# קבצי סביבה – מאוד חשוב לא לחשוף אותם!
+.env
+.env.*
+
+# תיקיות build
+dist/
+build/
+
+# בסיסי נתונים מקומיים (למשל עם SQLite או ORM שמייצר קבצים)
+*.sqlite
+*.sqlite3
+*.db
+*.db3
+
+# קבצי ORM נפוצים (לדוגמה Prisma או Sequelize)
+prisma/migrations/
+prisma/dev.db
+ormconfig.json
+ormconfig.js
+typeorm.ts
+
+# מערכת הפעלה
+.DS_Store
+Thumbs.db
+
+# עורכי קוד
+.vscode/
+.idea/
+
+# coverage אם אתה משתמש בכלי בדיקות
+coverage/
