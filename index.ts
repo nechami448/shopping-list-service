@@ -2,13 +2,13 @@ import express from 'express';
 import * as dotenv from 'dotenv';
 import { AppDataSource } from './data-source';
 import { loadInitialCategories } from './services/categoryService'
-import productRoutes from './routes/productRouter';
+import productRoutes from './routes/orderRouter';
 import categoryRoutes from './routes/categoryRouter';
 
 dotenv.config();
 const app = express();
 app.use(express.json());
-app.use('/api/products', productRoutes);
+app.use('/api/order', productRoutes);
 app.use('/api/category', categoryRoutes);
 AppDataSource.initialize().then(async () => {
   console.log('Connected to DB');
