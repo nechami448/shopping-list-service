@@ -1,7 +1,6 @@
 import { AppDataSource } from '../data-source';
 import { Category } from '../entity/category';
 import { Order } from '../entity/order';
-// import { Category } from '../entity/category';
 import { Product } from '../entity/product';
 import { OrderItem } from '../entity/productOrder';
 

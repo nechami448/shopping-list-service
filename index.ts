@@ -13,8 +13,7 @@ app.use('/api/category', categoryRoutes);
 AppDataSource.initialize().then(async () => {
   console.log('Connected to DB');
   await loadInitialCategories();
-
-  app.listen(3000, () => {
-    console.log('Server running on http://localhost:3000');
+  app.listen(5000, () => {
+    console.log('Server running on http://localhost:5000');
   });
 });
